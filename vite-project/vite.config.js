@@ -7,7 +7,15 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
+      devOptions: {
+        enabled: true,
+        type: "module",
+      },
+      // cache all the imports
       registerType: "autoUpdate",
+      workbox: {
+        globPatterns: ["**/*"],
+      },
       manifest: {
         name: "My PWA App",
         short_name: "PWA",
