@@ -45,7 +45,7 @@ const Home = () => {
         <button>count is {count}</button>
         <button onClick={() => setCount((count) => count + 1)}>+</button>
       </div>
-      <h2>A Simple PWA App </h2>
+      <h2>A Simple App </h2>
       {deferredPrompt && (
         <button onClick={handleInstallClick}>Install App</button>
       )}
